@@ -5,7 +5,18 @@ class Lucky {
  this.y = y;
  this.width = 30;
  this.height = 30;
- luckyblockimg = loadImage('luckyblock.png')
+ this.luckyblockimg = loadImage('luckyblock.png')
 
   }
+
+  display (){
+
+    push();
+    imageMode(CENTER);
+    image(this.luckyblockimg, this.x, this.y,30,30);
+    pop();
+    noFill();
+  }
+ 
+
 }
